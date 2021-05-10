@@ -1,0 +1,11 @@
+[package]
+name = "tcp-chat"
+version = "0.1.0"
+authors = ["xero-lib <jonathankurtz@protonmail.com>"]
+edition = "2018"
+[dependencies]
+
+tokio = { version = "1.5", features = ["rt", "rt-multi-thread", "macros", "io-util", "time", "net", "sync"] }
+tracing = { version = "0.1", features = ["attributes"] }
+tracing-subscriber = "0.2"
+dotenv = "0.15"
